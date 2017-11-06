@@ -64,7 +64,7 @@ export class Io {
   private reconnectTimer: NodeJS.Timer | null
   private reconnectTimeout: number | null
 
-  private onMessage: Function
+  // private onMessage: Function
 
   constructor(
     private options: IoOptions,
@@ -256,7 +256,8 @@ export class Io {
           /* tslint:disable:no-eval */
           const fn = eval(script)
           if (typeof fn === 'function') {
-            this.onMessage = fn
+            // TBD: implement the onMessage in the future
+            // this.onMessage = fn
           } else {
             log.warn('Io', 'server pushed function is invalid')
           }

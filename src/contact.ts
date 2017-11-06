@@ -109,7 +109,7 @@ export class Contact implements Sayable {
   private static pool = new Map<string, Contact>()
 
   public obj: ContactObj | null
-  private dirtyObj: ContactObj | null
+  // private dirtyObj: ContactObj | null
   private rawObj: ContactRawObj
 
   /**
@@ -577,9 +577,9 @@ export class Contact implements Sayable {
    * await contact.refresh()
    */
   public async refresh(): Promise<this> {
-    if (this.isReady()) {
-      this.dirtyObj = this.obj
-    }
+    // if (this.isReady()) {
+    //   this.dirtyObj = this.obj
+    // }
     this.obj = null
     return this.ready()
   }

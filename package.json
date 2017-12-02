@@ -101,7 +101,7 @@
     "request": "^2.83.0",
     "retry-promise": "^1.0.0",
     "rx-queue": "^0.3.1",
-    "rxjs": "^5.5.0",
+    "rxjs": "5.5.2",
     "state-switch": "^0.2.0",
     "watchdog": "^0.3.0",
     "ws": "^3.2.0",
